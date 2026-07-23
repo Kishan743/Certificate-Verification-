@@ -1,0 +1,464 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#2f5fd0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 15px;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.page{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+
+    width:100%;
+    max-width:430px;
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.20);
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+
+    background:linear-gradient(135deg,#2d69ea,#274ab9);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 25px;
+
+}
+
+.small-title{
+
+    font-size:14px;
+
+    opacity:.9;
+
+    margin-bottom:10px;
+
+}
+
+.certificate-id{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+
+}
+
+.verified{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#25c05b;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+
+    padding:28px;
+
+}
+
+.section-title{
+
+    color:#1f4ea2;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+    padding-bottom:10px;
+
+    border-bottom:4px solid #3f7dff;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.info-card{
+
+    background:white;
+
+    border:1px solid #ececec;
+
+    border-radius:16px;
+
+    padding:18px 20px;
+
+    margin-bottom:18px;
+
+    box-shadow:
+
+    0 4px 12px rgba(0,0,0,.06);
+
+}
+
+.info-card label{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#8c8c8c;
+
+    font-weight:500;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+
+}
+
+.info-card p{
+
+    font-size:18px;
+
+    font-weight:500;
+
+    color:#16386f;
+
+    line-height:1.5;
+
+}
+
+/* ===========================
+   Status
+=========================== */
+
+.status-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:#ebfff1;
+
+    border:2px solid #34c96b;
+
+    border-radius:16px;
+
+    padding:20px;
+
+}
+
+.status-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#24c25c;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.status-card h3{
+
+    color:#17863d;
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+}
+
+.status-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    padding:0 28px 25px;
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.buttons button{
+
+    flex:1;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#2e5cd5;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#2248a9;
+
+    transform:translateY(-2px);
+
+}
+
+.buttons i{
+
+    margin-right:8px;
+
+}
+
+/* ===========================
+   Timestamp
+=========================== */
+
+.verified-time{
+
+    padding:0 28px 25px;
+
+    font-size:14px;
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#23314f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:24px;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Hover Effects
+=========================== */
+
+.info-card:hover{
+
+    transform:translateY(-2px);
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.status-card:hover{
+
+    transform:scale(1.01);
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:480px){
+
+.header{
+
+    padding:30px 18px;
+
+}
+
+.certificate-id{
+
+    font-size:26px;
+
+}
+
+.section-title{
+
+    font-size:18px;
+
+}
+
+.info-card p{
+
+    font-size:17px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+/* Toast */
+
+.toast{
+
+position:fixed;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%) translateY(80px);
+
+background:#1e8e3e;
+
+color:white;
+
+padding:14px 22px;
+
+border-radius:40px;
+
+font-size:15px;
+
+font-weight:600;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+opacity:0;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.toast i{
+
+margin-right:10px;
+
+}
+
+.toast.show{
+
+opacity:1;
+
+transform:translateX(-50%) translateY(0);
+
+}
+
+
+
+/* Scroll Reveal */
+
+section{
+
+opacity:0;
+
+transform:translateY(25px);
+
+transition:.6s;
+
+}
+
+section.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
