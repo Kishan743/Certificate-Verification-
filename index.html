@@ -2,16 +2,12 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Certificate Verification</title>
 
-    <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -20,231 +16,275 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="wrapper">
+<div class="page">
 
-        <div class="container">
+<div class="card">
 
-            <!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
-            <div class="header">
+<div class="header">
 
-                <p class="header-title">
-                    Certificate Verification
-                </p>
+    <div class="header-top">
+        Certificate Verification
+    </div>
 
-                <h1 class="certificate-id">
-                    DA4A02F49F1B852G
-                </h1>
+    <div class="certificate-id">
+        DA4A02F49F1B852G
+    </div>
 
-                <div class="verified">
+    <div class="verified-badge">
 
-                    <i class="fa-solid fa-circle-check"></i>
+        <i class="fa-solid fa-circle-check"></i>
 
-                    VERIFIED
-
-                </div>
-
-            </div>
-
-            <!-- CONTENT -->
-
-            <div class="content">
-
-                <!-- Student -->
-
-                <section>
-
-                    <h2 class="section-title">
-                        Student Information
-                    </h2>
-
-                    <div class="card">
-
-                        <span>STUDENT NAME</span>
-
-                        <p>SHAIK LATHIF</p>
-
-                    </div>
-
-                </section>
-
-                <!-- Course -->
-
-                <section>
-
-                    <h2 class="section-title">
-                        Course Details
-                    </h2>
-
-                    <div class="card">
-
-                        <span>COURSE NAME</span>
-
-                        <p>Artificial Intelligence</p>
-
-                    </div>
-
-                    <div class="card">
-
-                        <span>CATEGORY</span>
-
-                        <p>Internship</p>
-
-                    </div>
-
-                    <div class="card">
-
-                        <span>DURATION</span>
-
-                        <p>8 Weeks</p>
-
-                    </div>
-
-                    <div class="card">
-
-                        <span>COMPANY NAME</span>
-
-                        <p>CODETECH IT SOLUTIONS PRIVATE LIMITED</p>
-
-                    </div>
-
-                </section>
-
-                <!-- Internship -->
-
-                <section>
-
-                    <h2 class="section-title">
-                        Internship Period
-                    </h2>
-
-                    <div class="card">
-
-                        <span>START DATE</span>
-
-                        <p>17 May 2026</p>
-
-                    </div>
-
-                    <div class="card">
-
-                        <span>END DATE</span>
-
-                        <p>18 July 2026</p>
-
-                    </div>
-
-                </section>
-
-                <!-- Certificate -->
-
-                <section>
-
-                    <h2 class="section-title">
-                        Certificate Details
-                    </h2>
-
-                    <div class="card">
-
-                        <span>ISSUE DATE</span>
-
-                        <p>20 July 2026</p>
-
-                    </div>
-
-                    <div class="card">
-
-                        <span>CERTIFICATE ID</span>
-
-                        <p>DA4A02F49F1B852G</p>
-
-                    </div>
-
-                </section>
-
-                <!-- Status -->
-
-                <section>
-
-                    <h2 class="section-title">
-                        Status
-                    </h2>
-
-                    <div class="status-box">
-
-                        <div class="status-icon">
-
-                            <i class="fa-solid fa-check"></i>
-
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Certificate Verified Successfully
-                            </h3>
-
-                            <p>
-                                This certificate has been verified and is authentic.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-                <!-- Buttons -->
-
-                <div class="buttons">
-
-                    <button id="copyBtn">
-
-                        <i class="fa-regular fa-copy"></i>
-
-                        Copy ID
-
-                    </button>
-
-                    <button onclick="window.print()">
-
-                        <i class="fa-solid fa-print"></i>
-
-                        Print
-
-                    </button>
-
-                </div>
-
-                <!-- Time -->
-
-                <div class="verify-time">
-
-                    Verified On :
-                    <span id="time"></span>
-
-                </div>
-
-            </div>
-
-            <!-- Footer -->
-
-            <footer>
-
-                This certificate has been verified and is authentic.
-
-            </footer>
-
-        </div>
+        VERIFIED
 
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<!-- ================= BODY ================= -->
+
+<div class="body">
+
+<!-- Student -->
+
+<div class="section">
+
+<div class="title">
+Student Information
+</div>
+
+<div class="info-card">
+
+<div class="label">
+STUDENT NAME
+</div>
+
+<div class="value">
+SHAIK LATHIF
+</div>
+
+</div>
+
+</div>
+
+<!-- Course -->
+
+<div class="section">
+
+<div class="title">
+Course Details
+</div>
+
+<div class="info-card">
+
+<div class="label">
+COURSE NAME
+</div>
+
+<div class="value">
+Artificial Intelligence
+</div>
+
+</div>
+
+<div class="info-card">
+
+<div class="label">
+CATEGORY
+</div>
+
+<div class="value">
+Internship
+</div>
+
+</div>
+
+<div class="info-card">
+
+<div class="label">
+COMPANY
+</div>
+
+<div class="value">
+CODETECH IT SOLUTIONS PRIVATE LIMITED
+</div>
+
+</div>
+
+<div class="info-card">
+
+<div class="label">
+DURATION
+</div>
+
+<div class="value">
+8 Weeks
+</div>
+
+</div>
+
+</div>
+
+<!-- Internship -->
+
+<div class="section">
+
+<div class="title">
+Internship Period
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<div class="label">
+START DATE
+</div>
+
+<div class="value">
+17 May 2026
+</div>
+
+</div>
+
+<div class="info-card">
+
+<div class="label">
+END DATE
+</div>
+
+<div class="value">
+18 July 2026
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Certificate -->
+
+<div class="section">
+
+<div class="title">
+Certificate Details
+</div>
+
+<div class="grid">
+
+<div class="info-card">
+
+<div class="label">
+ISSUE DATE
+</div>
+
+<div class="value">
+20 July 2026
+</div>
+
+</div>
+
+<div class="info-card">
+
+<div class="label">
+CERTIFICATE ID
+</div>
+
+<div class="value">
+DA4A02F49F1B852G
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Status -->
+
+<div class="section">
+
+<div class="title">
+Verification Status
+</div>
+
+<div class="status">
+
+<div class="status-icon">
+
+<i class="fa-solid fa-check"></i>
+
+</div>
+
+<div>
+
+<h3>
+Certificate Verified Successfully
+</h3>
+
+<p>
+This certificate has been verified successfully and is authentic.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="buttons">
+
+<button id="copyBtn">
+
+<i class="fa-regular fa-copy"></i>
+
+Copy ID
+
+</button>
+
+<button onclick="window.print()">
+
+<i class="fa-solid fa-print"></i>
+
+Print
+
+</button>
+
+</div>
+
+<div class="verify">
+
+Verified on
+
+<span id="time"></span>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+
+© 2026 CODETECH IT SOLUTIONS PRIVATE LIMITED
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>

@@ -1,65 +1,46 @@
-const certificateID = "DA4A02F49F1B852G";
+document.addEventListener("DOMContentLoaded", () => {
 
-const timeElement = document.getElementById("time");
-const copyButton = document.getElementById("copyBtn");
+    // Live verification time
+    const timeElement = document.getElementById("time");
 
-function updateTime() {
-    const now = new Date();
+    if (timeElement) {
+        const now = new Date();
 
-    timeElement.textContent = now.toLocaleString("en-IN", {
-        dateStyle: "medium",
-        timeStyle: "medium"
-    });
-}
+        timeElement.textContent = now.toLocaleString("en-IN", {
+            dateStyle: "full",
+            timeStyle: "medium"
+        });
+    }
 
-updateTime();
+    // Copy Certificate ID
+    const copyBtn = document.getElementById("copyBtn");
+    const certificateId = "DA4A02F49F1B852G";
 
-copyButton.addEventListener("click", async () => {
+    if (copyBtn) {
+        copyBtn.addEventListener("click", async () => {
 
-    try {
+            try {
+                await navigator.clipboard.writeText(certificateId);
 
-        await navigator.clipboard.writeText(certificateID);
+                const originalHTML = copyBtn.innerHTML;
 
-        showToast("Certificate ID copied successfully");
+                copyBtn.innerHTML = `
+                    <i class="fa-solid fa-check"></i>
+                    Copied!
+                `;
 
-    } catch {
+                copyBtn.disabled = true;
 
-        showToast("Unable to copy Certificate ID");
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalHTML;
+                    copyBtn.disabled = false;
+                }, 1800);
 
+            } catch (err) {
+                alert("Unable to copy Certificate ID.");
+            }
+
+        });
     }
 
 });
-
-function showToast(message) {
-
-    const existing = document.querySelector(".toast");
-
-    if (existing) {
-        existing.remove();
-    }
-
-    const toast = document.createElement("div");
-
-    toast.className = "toast";
-
-    toast.textContent = message;
-
-    document.body.appendChild(toast);
-
-    requestAnimationFrame(() => {
-        toast.classList.add("show");
-    });
-
-    setTimeout(() => {
-
-        toast.classList.remove("show");
-
-        setTimeout(() => {
-
-            toast.remove();
-
-        }, 300);
-
-    }, 2000);
-
-}

@@ -6,231 +6,224 @@
 }
 
 body{
-    background:#2f5fd0;
+    background:#eef2f7;
     display:flex;
     justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:30px 15px;
+    padding:40px 15px;
+    color:#222;
 }
 
-.wrapper{
+.page{
     width:100%;
-    display:flex;
-    justify-content:center;
-}
-
-.container{
-    width:100%;
-    max-width:430px;
-    background:#fff;
-    border-radius:24px;
-    overflow:hidden;
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
-}
-
-.header{
-    background:linear-gradient(135deg,#2d6df6,#2348b8);
-    padding:38px 24px;
-    text-align:center;
-    color:#fff;
-}
-
-.header-title{
-    font-size:15px;
-    opacity:.95;
-    margin-bottom:12px;
-}
-
-.certificate-id{
-    font-size:30px;
-    font-weight:700;
-    letter-spacing:2px;
-    word-break:break-word;
-}
-
-.verified{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    margin-top:24px;
-    background:#27c45a;
-    color:#fff;
-    padding:12px 24px;
-    border-radius:50px;
-    font-size:14px;
-    font-weight:600;
-}
-
-.content{
-    padding:28px;
-}
-
-section{
-    margin-bottom:32px;
-}
-
-.section-title{
-    color:#21458f;
-    font-size:20px;
-    font-weight:500;
-    margin-bottom:20px;
-    padding-bottom:12px;
-    border-bottom:4px solid #3f7dff;
+    max-width:700px;
 }
 
 .card{
     background:#fff;
-    border:1px solid #ececec;
-    border-radius:16px;
-    padding:18px 18px;
-    margin-bottom:16px;
-    box-shadow:0 3px 10px rgba(0,0,0,.05);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
-.card span{
-    display:block;
-    color:#777;
-    font-size:12px;
+/* ================= HEADER ================= */
+
+.header{
+    background:linear-gradient(135deg,#1976ff,#0056d6);
+    padding:35px 25px;
+    text-align:center;
+    color:#fff;
+}
+
+.header-top{
+    font-size:17px;
+    font-weight:500;
+    opacity:.95;
+}
+
+.certificate-id{
+    margin-top:14px;
+    font-size:32px;
+    font-weight:700;
     letter-spacing:1px;
-    margin-bottom:8px;
-    font-weight:500;
+    word-break:break-word;
 }
 
-.card p{
-    color:#173d7c;
-    font-size:18px;
-    font-weight:500;
+.verified-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:20px;
+    padding:10px 24px;
+    background:#16c784;
+    border-radius:999px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.body{
+    padding:30px;
+}
+
+.section{
+    margin-bottom:34px;
+}
+
+.title{
+    font-size:20px;
+    font-weight:600;
+    color:#1f2937;
+    margin-bottom:18px;
+    padding-bottom:8px;
+    border-bottom:2px solid #e7e7e7;
+}
+
+.info-card{
+    background:#f8fafc;
+    border:1px solid #e6ebf2;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:14px;
+    transition:.25s;
+}
+
+.info-card:hover{
+    border-color:#1976ff;
+    transform:translateY(-2px);
+}
+
+.label{
+    font-size:12px;
+    color:#6b7280;
+    font-weight:600;
+    letter-spacing:.8px;
+    margin-bottom:8px;
+}
+
+.value{
+    font-size:17px;
+    font-weight:600;
+    color:#111827;
     line-height:1.5;
 }
 
-.status-box{
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.status{
     display:flex;
     align-items:center;
     gap:18px;
-    background:#ecfff2;
-    border:2px solid #2ac35b;
-    border-radius:16px;
-    padding:20px;
+    background:#ecfff6;
+    border:1px solid #b7f2d5;
+    border-radius:14px;
+    padding:22px;
 }
 
 .status-icon{
-    width:55px;
-    height:55px;
+    width:62px;
+    height:62px;
     border-radius:50%;
-    background:#2ac35b;
+    background:#16c784;
+    color:#fff;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
-    font-size:22px;
+    font-size:24px;
     flex-shrink:0;
 }
 
-.status-box h3{
-    color:#11853c;
-    font-size:18px;
+.status h3{
+    font-size:20px;
     margin-bottom:6px;
 }
 
-.status-box p{
-    color:#666;
-    font-size:14px;
+.status p{
+    color:#5b6470;
+    line-height:1.6;
 }
 
 .buttons{
     display:flex;
-    gap:12px;
+    gap:15px;
     margin-top:10px;
 }
 
 .buttons button{
     flex:1;
     border:none;
-    background:#2d6df6;
+    cursor:pointer;
+    border-radius:10px;
+    padding:15px;
     color:#fff;
-    padding:14px;
-    border-radius:12px;
     font-size:15px;
     font-weight:600;
-    cursor:pointer;
     transition:.25s;
 }
 
+.buttons button:first-child{
+    background:#1976ff;
+}
+
+.buttons button:last-child{
+    background:#16a34a;
+}
+
 .buttons button:hover{
-    background:#204eb9;
+    transform:translateY(-2px);
+    opacity:.92;
 }
 
-.buttons i{
-    margin-right:8px;
-}
-
-.verify-time{
+.verify{
     margin-top:24px;
-    color:#666;
-    font-size:14px;
-}
-
-footer{
-    background:#24334f;
-    color:#fff;
     text-align:center;
-    padding:22px;
-    font-size:15px;
-}
-
-.toast{
-    position:fixed;
-    bottom:30px;
-    left:50%;
-    transform:translateX(-50%);
-    background:#1ea84a;
-    color:#fff;
-    padding:14px 22px;
-    border-radius:50px;
+    color:#6b7280;
     font-size:14px;
-    opacity:0;
-    pointer-events:none;
-    transition:.3s;
 }
 
-.toast.show{
-    opacity:1;
+.verify span{
+    display:block;
+    margin-top:6px;
+    color:#111827;
+    font-weight:600;
 }
 
-@media(max-width:480px){
+.footer{
+    background:#f4f7fb;
+    border-top:1px solid #e5e7eb;
+    padding:18px;
+    text-align:center;
+    font-size:14px;
+    color:#6b7280;
+}
 
-    .container{
-        border-radius:20px;
-    }
+@media(max-width:640px){
 
-    .header{
-        padding:30px 18px;
-    }
+.body{
+    padding:20px;
+}
 
-    .certificate-id{
-        font-size:24px;
-    }
+.grid{
+    grid-template-columns:1fr;
+}
 
-    .content{
-        padding:22px;
-    }
+.buttons{
+    flex-direction:column;
+}
 
-    .section-title{
-        font-size:18px;
-    }
+.certificate-id{
+    font-size:25px;
+}
 
-    .card p{
-        font-size:17px;
-    }
+.title{
+    font-size:18px;
+}
 
-    .buttons{
-        flex-direction:column;
-    }
-
-    .status-box{
-        flex-direction:column;
-        text-align:center;
-    }
+.status{
+    flex-direction:column;
+    text-align:center;
+}
 
 }
